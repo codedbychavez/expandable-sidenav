@@ -17,7 +17,7 @@
 			{/if}
 		</button>
 	</div>
-	<nav>
+	<nav class="bg-yellow-700 mt-2">
 		<ul>
 			<li>Home</li>
 			<li>About</li>
