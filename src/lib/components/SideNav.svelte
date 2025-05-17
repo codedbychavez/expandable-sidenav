@@ -1,10 +1,16 @@
 <script lang="ts">
 	import { toggleSideNav, getIsSideNavOpen } from '$lib/state.svelte';
+	import Dashboard from './icons/Dashboard.svelte';
 	import LayoutSidebarLeftCollapse from './icons/LayoutSidebarLeftCollapse.svelte';
 	import LayoutSidebarLeftExpand from './icons/LayoutSidebarLeftExpand.svelte';
+	import Logout from './icons/Logout.svelte';
+	import Plug from './icons/Plug.svelte';
+	import Settings from './icons/Settings.svelte';
+	import Speakerphone from './icons/Speakerphone.svelte';
+	import User from './icons/User.svelte';
 </script>
 
-<div class="side-nav bg-gray-900 text-gray-100 h-dvh">
+<div class="side-nav bg-gray-900 text-gray-100 h-full flex flex-col">
 	<div class="button-wrapper text-right">
 		<button
 			class="text-white bg-violet-500 p-3 -mr-6 cursor-pointer mt-4 shadow-sm rounded-full"
@@ -17,11 +23,73 @@
 			{/if}
 		</button>
 	</div>
-	<nav class="bg-yellow-700 mt-2">
+	<nav class="mt-8">
 		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact</li>
+			<li
+				class="{!getIsSideNavOpen() &&
+					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+			>
+				{#if getIsSideNavOpen()}
+					Dashboard
+				{:else}
+					<Dashboard />
+				{/if}
+			</li>
+			<li
+				class="{!getIsSideNavOpen() &&
+					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+			>
+				{#if getIsSideNavOpen()}
+					Integrations
+				{:else}
+					<Plug />
+				{/if}
+			</li>
+			<li
+				class="{!getIsSideNavOpen() &&
+					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+			>
+				{#if getIsSideNavOpen()}
+					Settings
+				{:else}
+					<Settings />
+				{/if}
+			</li>
+		</ul>
+	</nav>
+
+	<nav class="mt-auto">
+		<ul>
+			<li
+				class="{!getIsSideNavOpen() &&
+					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+			>
+				{#if getIsSideNavOpen()}
+					Account
+				{:else}
+					<User />
+				{/if}
+			</li>
+			<li
+				class="{!getIsSideNavOpen() &&
+					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+			>
+				{#if getIsSideNavOpen()}
+					News & Events
+				{:else}
+					<Speakerphone />
+				{/if}
+			</li>
+			<li
+				class="{!getIsSideNavOpen() &&
+					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+			>
+				{#if getIsSideNavOpen()}
+					Logout
+				{:else}
+					<Logout />
+				{/if}
+			</li>
 		</ul>
 	</nav>
 </div>
