@@ -27,8 +27,7 @@
 	<nav class="mt-8">
 		<ul>
 			<li
-				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Dashboard
@@ -37,8 +36,7 @@
 				{/if}
 			</li>
 			<li
-				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Integrations
@@ -47,8 +45,7 @@
 				{/if}
 			</li>
 			<li
-				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Settings
@@ -62,8 +59,7 @@
 	<nav class="mt-auto">
 		<ul>
 			<li
-				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Account
@@ -72,18 +68,16 @@
 				{/if}
 			</li>
 			<li
-				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
-					News & Events
+					News
 				{:else}
 					<Speakerphone />
 				{/if}
 			</li>
 			<li
-				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Logout

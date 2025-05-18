@@ -7,7 +7,7 @@
 </script>
 
 <div class="app-wrapper flex w-full">
-	<div class="h-dvh {getIsSideNavOpen() ? 'w-60' : 'w-16'} bg-orange-300">
+	<div class="side-nav-wrapper h-dvh {getIsSideNavOpen() ? 'w-60' : 'w-16'} bg-orange-300">
 		<SideNav />
 	</div>
 
@@ -15,3 +15,12 @@
 		{@render children()}
 	</div>
 </div>
+
+<style>
+
+	.side-nav-wrapper {
+		transition: width .2s;
+		transition-delay: .02s;
+		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+	}
+</style>
