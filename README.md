@@ -7,10 +7,20 @@ An expandable left sidebar made with Svelte and Tailwind CSS.
 
 ## Build & Run
 
-```bash
-# create a new project in the current directory
-npx sv create
+1. Navigate to the project folder.
 
-# create a new project in my-app
-npx sv create my-app
+2. Install the npm dependencies:
+
+```bash
+npm install
 ```
+
+3. Run the app locally
+
+```bash
+npm run dev
+```
+
+---
+
+Handcrafted by [codedbychavez](https://github.com/codedbychavez)
