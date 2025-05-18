@@ -6,8 +6,13 @@
 	import { getIsSideNavOpen } from '$lib/state.svelte';
 </script>
 
-<div class="app-wrapper flex w-full">
-	<div class="side-nav-wrapper h-dvh {getIsSideNavOpen() ? 'w-60' : 'w-16'} bg-orange-300">
+<svelte:head>
+	<title>Expandable SideNav</title>
+	<meta name="description" content="An expandable left sidebar made with Svelte and Tailwind CSS." />
+</svelte:head>
+
+<div class="app-wrapper flex w-full h-full">
+	<div class="side-nav-wrapper h-dvh {getIsSideNavOpen() ? 'w-60' : 'w-17'}">
 		<SideNav />
 	</div>
 
@@ -21,6 +26,7 @@
 	.side-nav-wrapper {
 		transition: width .2s;
 		transition-delay: .02s;
-		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+		overflow: hidden;
 	}
 </style>
