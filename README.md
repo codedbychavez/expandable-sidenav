@@ -1,6 +1,6 @@
 # Expandable Sidenav
 
-An expandable left sidebar made with Svelte and Tailwind CSS. 
+An expandable left side nav made with Svelte and Tailwind CSS.
 
 ## Demo
 ![Expandable Sidenav Gif](https://github.com/user-attachments/assets/99fd8398-9a5c-4637-bd1a-251102e97985)
