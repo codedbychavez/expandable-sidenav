@@ -11,8 +11,7 @@
 </script>
 
 <div class="side-nav bg-gray-900 text-gray-100 h-full flex flex-col">
-	<div class="{!getIsSideNavOpen() &&
-					'text-center'} button-wrapper mt-4 px-5">
+	<div class="button-wrapper mt-4 px-5">
 		<button
 			class="text-white cursor-pointer"
 			onclick={() => toggleSideNav()}
@@ -27,7 +26,7 @@
 	<nav class="mt-8">
 		<ul>
 			<li
-				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Dashboard
@@ -36,7 +35,7 @@
 				{/if}
 			</li>
 			<li
-				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Integrations
@@ -45,7 +44,7 @@
 				{/if}
 			</li>
 			<li
-				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Settings
@@ -59,7 +58,7 @@
 	<nav class="mt-auto">
 		<ul>
 			<li
-				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Account
@@ -68,7 +67,7 @@
 				{/if}
 			</li>
 			<li
-				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					News
@@ -77,7 +76,7 @@
 				{/if}
 			</li>
 			<li
-				class="flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
+				class="p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Logout
