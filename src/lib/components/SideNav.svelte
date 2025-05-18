@@ -11,9 +11,10 @@
 </script>
 
 <div class="side-nav bg-gray-900 text-gray-100 h-full flex flex-col">
-	<div class="button-wrapper text-right">
+	<div class="{!getIsSideNavOpen() &&
+					'text-center'} button-wrapper mt-4 px-5">
 		<button
-			class="text-white bg-violet-500 p-3 -mr-6 cursor-pointer mt-4 shadow-sm rounded-full"
+			class="text-white cursor-pointer"
 			onclick={() => toggleSideNav()}
 		>
 			{#if getIsSideNavOpen()}
@@ -27,7 +28,7 @@
 		<ul>
 			<li
 				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Dashboard
@@ -37,7 +38,7 @@
 			</li>
 			<li
 				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Integrations
@@ -47,7 +48,7 @@
 			</li>
 			<li
 				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Settings
@@ -62,7 +63,7 @@
 		<ul>
 			<li
 				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Account
@@ -72,7 +73,7 @@
 			</li>
 			<li
 				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					News & Events
@@ -82,7 +83,7 @@
 			</li>
 			<li
 				class="{!getIsSideNavOpen() &&
-					'justify-center'} flex p-4 my-4 hover:bg-gray-700 cursor-pointer"
+					'justify-center'} flex p-5 my-4 hover:bg-gray-700 cursor-pointer"
 			>
 				{#if getIsSideNavOpen()}
 					Logout
